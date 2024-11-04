@@ -1,6 +1,7 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:second_app/data/questions.dart';
 import 'package:second_app/qusetion.dart';
 import 'package:second_app/ques_ass.dart';
 
@@ -10,7 +11,7 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
-  final List<String> answerlist = [];
+   List<String> answerlist = [];
   var harsh = 'welcome-screen';
   @override
   Widget build(context) {
@@ -22,6 +23,12 @@ class _FirstScreenState extends State<FirstScreen> {
 
     void answer(String ans) {
       answerlist.add(ans);
+       if (answerlist.length == ques.length) {
+      setState(() {
+        answerlist = [];
+        harsh = 'welcome-screen';
+      });
+    }
     }
 
     return MaterialApp(

@@ -9,7 +9,7 @@ class button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: ontap,
       style: ElevatedButton.styleFrom(
         foregroundColor: const Color.fromARGB(255, 0, 0, 0),
         // padding: EdgeInsets.fromLTRB(90, 60, 20, 10)

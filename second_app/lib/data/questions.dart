@@ -24,8 +24,5 @@ var ques = [
       'A widget that depends on user interaction'
     ],
   ),
-  Question_Answer(
-    'how are you',
-    ['fine', 'ok'],
-  )
+
 ];
